@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Mi pagina de prueba</title>
-
+  <meta charset="UTF-8">
+  <title>Galeria de Autos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .galeria img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
-    <img src=".\imagenes\ironman.jpg" alt="Mi imagen de pruebaa">
+  <header>
+    <h1>Modelos de Autos</h1>
+  </header>
+  <div class="galeria">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Toyota_Supra_JZA80_front.jpg/320px-Toyota_Supra_JZA80_front.jpg" alt="Toyota Supra">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/2018_Ford_Mustang_GT_5.0.jpg/320px-2018_Ford_Mustang_GT_5.0.jpg" alt="Ford Mustang">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/2019_Chevrolet_Camaro_SS_%28cropped%29.jpg/320px-2019_Chevrolet_Camaro_SS_%28cropped%29.jpg" alt="Chevrolet Camaro">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/2018_BMW_M2_Coupe_Mineral_Grau_%28cropped%29.jpg/320px-2018_BMW_M2_Coupe_Mineral_Grau_%28cropped%29.jpg" alt="BMW M2">
+  </div>
 </body>
-
-
 </html>
